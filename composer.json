@@ -24,10 +24,11 @@
     ],
     "require": {
         "php": ">=8.2",
-        "symfony/http-client-contracts": "^3.4",
+        "symfony/http-client-contracts": "^2.0 || ^3.0",
         "symfony/http-client": "^5.4 || ^6.4 || ^7.0",
-        "symfony/serializer": "^5.4 || ^6.4 || ^7.0",
-        "symfony/property-access": "^5.4 || ^6.4 || ^7.0"
+        "symfony/serializer": "^6.4 || ^7.0",
+        "symfony/property-access": "^5.4 || ^6.4 || ^7.0",
+        "symfony/property-info": "^5.4 || ^6.4 || ^7.0"
     },
     "autoload": {
         "psr-4": {
