@@ -10,14 +10,14 @@ declare(strict_types=1);
 
 namespace InspiredMinds\EyepinApi\Model\Response;
 
-use InspiredMinds\EyepinApi\Model\Account;
+use InspiredMinds\EyepinApi\Model\AddressList;
 use Symfony\Component\Serializer\Attribute\SerializedPath;
 
-class AccountResponse extends AbstractResponse
+class AddressListsResponse extends AbstractResponse
 {
     /**
-     * @var list<Account>
+     * @var list<AddressList>
      */
-    #[SerializedPath('[data][account]')]
-    public array $accounts = [];
+    #[SerializedPath('[data][addresslist]')]
+    public array $addressLists = [];
 }

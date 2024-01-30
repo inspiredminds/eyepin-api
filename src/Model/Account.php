@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace InspiredMinds\EyepinApi\Model;
 
 use Symfony\Component\Serializer\Attribute\SerializedName;
+use Symfony\Component\Serializer\Attribute\SerializedPath;
 
 class Account
 {
@@ -24,5 +25,6 @@ class Account
     /**
      * @var list<Customer>
      */
+    #[SerializedPath('[customers][customer]')]
     public array $customers = [];
 }
