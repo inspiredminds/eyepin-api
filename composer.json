@@ -1,0 +1,46 @@
+{
+    "name": "inspiredminds/eyepin-api",
+    "description": "eyepin API library for PHP.",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "homepage": "https://github.com/inspiredminds/eyepin-api",
+    "authors": [
+        {
+            "name": "Fritz Michael Gschwantner",
+            "email": "fmg@inspiredminds.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/inspiredminds/eyepin-api/issues",
+        "source": "https://github.com/inspiredminds/eyepin-api",
+        "forum": "https://community.contao.org/de"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/fritzmg"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/http-client-contracts": "^3.4",
+        "symfony/http-client": "^5.4 || ^6.4 || ^7.0",
+        "symfony/serializer": "^5.4 || ^6.4 || ^7.0",
+        "symfony/property-access": "^5.4 || ^6.4 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "InspiredMinds\\EyepinApi\\": "src/"
+        }
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^6.0",
+        "contao/rector": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
