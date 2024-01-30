@@ -5,3 +5,22 @@ eyepin API
 ==========
 
 PHP library for the [eyepin](https://www.eyepin.com/) [API](https://docs.eyepin.com/api/).
+
+```php
+use InspiredMinds\EyepinApi\EyepinApiFactory;
+use InspiredMinds\EyepinApi\Model\AddressList;
+use InspiredMinds\EyepinApi\Model\Request\AddressInsertRequest;
+
+$api = (new EyepinApiFactory())->createForCredentials('username', 'password');
+
+// Get account info
+$accountInfo = $api->getAccountInfo();
+
+// Create address
+$addressInsertRequest = new AddressInsertRequest();
+$addressInsertRequest->email = 'foobar@example.com';
+$addressInsertRequest->status = '1';
+$addressInsertRequest->lists[] = new AddressList(123);
+
+$api->createUpdateAddress($addressInsertRequest);
+```
