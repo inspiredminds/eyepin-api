@@ -16,7 +16,7 @@ use Symfony\Component\Serializer\Attribute\SerializedPath;
 class Account
 {
     #[SerializedName('@id')]
-    public string $id;
+    public int $id;
 
     public string $name;
 
