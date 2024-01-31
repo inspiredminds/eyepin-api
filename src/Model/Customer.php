@@ -15,7 +15,7 @@ use Symfony\Component\Serializer\Attribute\SerializedName;
 class Customer
 {
     #[SerializedName('@id')]
-    public string $id;
+    public int $id;
 
     public string $name;
 }
